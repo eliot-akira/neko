@@ -1,0 +1,178 @@
+
+!!X11 G-  -  README
+
+						Written by Masayuki Koba
+
+
+#1!%$O$8$a$K
+
+!!!!xneko $O!"G-$,%^%&%9!&%+!<%=%k$rDI$$$+$1$k$H$$$&4D6-%=%U%H$G$9!#
+
+    K\%W%m%0%i%`$O!"Macintosh $N%G%9%/%"%/%;%5%j$H$7$F=P2s$C$F$$$k "neko" $N
+  F0$-$r X11 >e$G:F8=$7$F$_$?$b$N$G$9!#%*%j%8%J%k$H$O<c43F0:n$,0[$J$kItJ,$b
+  $"$j$^$9$,!"$3$&$$$C$?$H$3$m$O!";d$J$j$N%"%l%s%8$N7k2L$@$H;W$C$F2<$5$$!#
+
+
+#2!%xneko ;HMQJ}K!
+
+!!!!xneko $N5/F0J}K!$O0J2<$NDL$j!#
+
+	xneko [-display <display>] [-geometry <geometry>] [-title <title>] \
+	  [-name <title>] [-iconic] [-speed <speed>] [-time <time>] [-help]
+
+
+		-display <display>	%M%C%H%o!<%/>e$KB8:_$9$k%G%#%9%W%l%$
+					L>$r;XDj$7$^$9!#
+
+		-geometry <geometry>	%&%#%s%I%&$N%5%$%:$H0LCV$r;XDj$7$^$9!#
+					<geometry> $O!"I}x9b$5+#X:BI8+#Y:BI8
+					$N7A<0$G;XDj$7$^$9!#
+
+		-title <title>		%&%#%s%I%&L>!"$*$h$S%"%$%3%sL>$N%?%$
+					%H%k$r;XDj$7$^$9!# (>JN,$9$k$H%W%m%0
+					%i%`L>$,%?%$%H%k$K$J$j$^$9!#)
+
+		-name <title>		-title <title> $HF1$8$G$9!#
+
+		-iconic			%W%m%0%i%`$r%"%$%3%s>uBV$G5/F0$7$^$9!#
+
+		-speed <speed>		G-$N0\F0B.EY (C10L;~4V$"$?$j$N0\F0%T
+					%/%;%k) $r;XDj$7$^$9!# (%G%U%)%k%H =
+					16!#)
+
+		-time <time>		G-$N%$%s%?!<%P%k%?%$%` (%"%K%a!<%7%g
+					%s$rIA$-JQ$($k:]$N;~4V4V3V) $rJQ99$7
+					$^$9!#(%G%U%)%k%H = 125000!#)
+
+		-help			4JC1$J47MQNc$rI=<($7$^$9!#
+
+
+	Ex.1:	xneko -display foo:0.0 -geometry 300x300+150+100
+
+			!D!!%[%9%H foo >e$N%G%#%9%W%l%$:BI8 (150, 100) $G!"
+			    %&%#%s%I%&%5%$%: (300, 300) $N X11 G-$r5/F0$9$k!#
+			    (-display $r0-MQ$9$k$H!"B>?M$N%G%#%9%W%l%$>e$K
+			    G-$r%3%C%=%jI=<($9$k$H$$$&$3$H$b2DG=$G$9!#)
+
+	Ex.2:	xneko -speed 4 -time 200000
+
+			!D!!%I%s%,%a$NG-$r5/F0$9$k!#
+
+
+    ;H$$J}$O$$$?$C$F4JC1!#%^%&%9$r%0%j%0%j$HF0$+$9$H!"$=$l$K$D$i$l$FG-$,Av$j
+  2s$j$^$9!#=*N;$9$k>l9g$O!"G-$N%&%#%s%I%&$K Meta-Q (Alt-Q) $rAw$C$F2<$5$$!#
+
+    $J$*!"%&%#%s%I%&$N%j%5%$%:$K$bBP1~$7$F$$$^$9$N$G!"G-$,;t$o$l$F$$$k%&%#%s
+  %I%&$rE,Ev$JBg$-$5$KD4@0$7$F!"2hLL$N6y$K$G$bG[CV$7$F$"$2$k$H$$$$$G$7$g$&!#
+
+
+#3!%%W%m%0%i%`$N9=@.
+
+    K\%W%m%0%i%`$OA4$F Xlib $G=q$+$l$F$*$j!"G-$N%G%6%$%s$O bitmap %3%^%s%I$N
+  =PNO$rMxMQ$7$F$$$^$9!#=>$C$F!"$=$N5$$,$"$l$P!"G-$N%G%6%$%s$r0[$J$C$?J*$K$7
+  $FLLGr$$%"%l%s%8!&%P!<%8%g%s$r:n@.$9$k$3$H$b$G$-$k$G$7$g$&!#
+
+
+#4!%%P!<%8%g%s$K$D$$$F
+
+    K\%W%m%0%i%`$N%P!<%8%g%s$rCN$j$?$$>l9g$O!"%=!<%9$N RCS %X%C%@!<$r8+$k$+
+  ident %3%^%s%I$G%P%$%J%j!<$r%A%'%C%/$7$F RCS $N%j%S%8%g%s$rD4$Y$F2<$5$$!#
+  :#2s$N%j%S%8%g%s$O 1.14 $K$J$C$F$$$k$O$:$G$9!#
+
+
+#5!%%=!<%9$N<h07$$$K$D$$$F
+
+    K\%W%m%0%i%`$O X11 $KBP$9$k;d$NOS;n$7$H$7$F:n$C$?$b$N$G$"$j!"8D?ME*$K$O
+  40A4$K Public Domain Software $H$7$F07$$$?$$$H9M$($F$$$^$9!#=>$C$F!"G[I[!&
+  2~NI$O<+M3$K9T$C$F2<$5$$!#
+  
+    K\%W%m%0%i%`$r3HD%$7$?LLGr$$J*$,$>$/$>$/$HEP>l$9$k$3$H$r4|BT$7$F$$$^$9!#
+
+
+#6!%%P%05Z$S@)8B;v9`
+
+!!!!%P%0$d@)8B;v9`$O!"%=!<%9 (xneko.c) $NJ}$K%3%a%s%H$H$7$F5-:\$7$F$*$-$^$7
+  $?!#>\$7$/$O%=!<%9$NJ}$r$4Mw2<$5$$!#
+
+
+#7!%2~DjMzNr
+
+!!Revision 1.1	!Z=iHG![	!D!!X11 G- initial revision!#
+  Revision 1.2			!D!!Revision 1.1 $K$"$C$?!"2a5n$NL>;D$G$"$k
+				    M>J,$J%F!<%V%k$dJQ?t!"=hM}$N=|5n!#
+  Revision 1.3			!D!!setitimer() $N%?%$%^!<@_Dj=hM}$N=$@0!#A0
+				    $N%P!<%8%g%s$K$O%7%9%F%`$KIi2Y$,$+$+$j$9
+				    $.$k$H SIGALRM $, pause() $KAw$i$l$:!"G-
+				    $,%O%s%0$9$k$H$$$&%P%0$,$"$C$?!# ($H$$$&
+				    $h$j$b!"setitimer() $N;H$$J}$,8m$C$F$$$?
+				    $H8@$($k!#)
+  Revision 1.4			!D!!#X$NBeI=E*$J%*%W%7%g%s$r%5%]!<%H!#
+  Revision 1.5			!D!!%3%a%s%H$N$A$g$C$H$7$?=$@0!#
+  Revision 1.6	!ZBh#2HG![	!D!!lint %A%'%C%/$K$h$k!"L5BL$J=hM}$N=|5n!#
+  Revision 1.7			!D!!%$%s%?!<%P%kKh$K%?%$%^!<$r@_Dj$9$k$H$$$&
+				    L5BL$r>J$$$?!#
+  Revision 1.8	!ZBh#3HG![	!D!!XCopyArea() "* XCopyPlane() $X$N=q$-$+$(!#
+				    (XCopyPlane() $NJ}$,8zN($h$5$=$&$J$N$G!#)
+!!Revision 1.9			!D!!Interval() $N%Q%i%a!<%?$N=|5n!"5Z$SDV$j
+				    %_%9$N=$@0!#
+  Revision 1.10	!ZBh#4HG![	!D!!X11 R2 %P%02sHrHG!# (GC $N;H$$J}$r8m$C$F
+				    $$$?$H$$$&%&%o%5$b$"$k!#)
+  Revision 1.11			!D!!XCreatePixmapCursor() $N%Q%i%a!<%?@_Dj%_
+				    %9$N=$@0!#
+  Revision 1.12	!ZBh#5HG![	!D!!%3%a%s%H$N=$@0!#
+  Revision 1.13			!D!!J#?t%W%l!<%s$r;}$D%S%C%H%^%C%W!&%G%#%9%W
+				    %l%$$X$NBP1~!#
+  Revision 1.14	!ZBh#6HG![	!D!!%3%a%s%H$N=$@0!#
+
+
+#8!%:G8e$K
+
+!!!J#1!K%3%s%Q%$%k;~!"-DDEBUG $r;XDj$9$k$HA4$/JL$N%W%m%0%i%`$K$J$j$^$9!#$3$N
+      %b!<%I$G$O!"%G%6%$%s0lMwI=<($H%-!<%Q!<%IA`:n$K$h$kG-$N%3%s%H%m!<%k$,2D
+      G=$G$9!#
+
+  !J#2!K#ifdef DEBUG $N%*%s%Q%l!<%I$G%=!<%9$,FI$_$K$/$$>l9g$O!"unifdef %3%^
+      %s%I$r;H$C$FM>J,$J #ifdef J8$r<h$j5n$C$F2<$5$$!#
+
+  !J#3!K;d$N%^%7%s4D6- (NEWS-OS 3.2a, X11 Release 2) $N X11 $K$O!"XCopyArea()
+      $d XCopyPlane() 6aJU$KNN0h2rJ|O3$l$N%P%0$,$"$k$h$&$G$9!# (XCopyArea()
+      $@$1$r%3!<%k$9$kL58B%k!<%W$rAH$s$G%7%9%F%`$r4F;k$7$F$$$?$H$3$m!"$I$s$I
+      $s%a%b%j$r?)$$DY$7$F$$$-$^$7$?!#$J$s$F$3$C$?!*)!!=>$C$F!"G-$N%-%c%i%/
+      %?$r XCopyArea() $GAGD>$K%3%T!<$9$k$H!"$=$N$&$A%7%9%F%`$N%9%o%C%WNN0h
+      $,%Q%s%/$7$F$7$^$&$3$H$K$J$j$^$9!# (X11 $N;EMM$J$N$+$J$!!))
+
+	9,$$!"X11 MQ$N%m!<%I%i%s%J!< (golddig) $N%=!<%90l<0$r;}$C$F$$$^$7$?
+      $N$G!V$3$$$D$O$I$&BP=h$7$F$$$k$N$@$m$&!)!W$H;W$C$FGA$$$F$_$?$H$3$m!"O"
+      Cf$O<!$N$h$&$J9*L/$J<j$G%P%0$r2sHr$7$F$$$^$7$?!#
+
+	    ;d$,:G=i$K9M$($?C1=c$J0F!'
+
+		(a) %-%c%i%/%?$N Pixmap $r@8@.$9$k!#
+		(b) $=$N Pixmap $rI=<($7$?$$ItJ,$K%3%T!<$9$k!#
+
+	    golddig $N:v!'
+
+		(a) %-%c%i%/%?$N Pixmap $r@8@.$9$k!#
+		(b) $=$N Pixmap $rJ];}$7$? GC $r:n$k!#
+		(c) $=$N GC $r;H$C$F!"XFillRectangle() $r8F$V!#
+
+	$J$k$[$I!"$3$N:v$@$H%9%o%C%W$N%*!<%P!<%U%m!<$OH/@8$7$J$$$h$&$G$9!#($&
+      $^$$$b$s$@!#)!!:G?7$N X11 G-$O!"$3$N<jK!$K@Z$j49$($F$*$-$^$7$?!#
+
+  !J#4!Ktroff $N -man 7A<0$N%U%!%$%k$bDs6!$7$h$&$+$H;W$C$?$N$G$9$,!"LLE]$J$N
+      $G=q$$$F$$$^$;$s!#$3$N README $H!"xneko -help (xneko -h) $G=P$k Usage
+      $@$1$G4*J[$7$F2<$5$$!#
+
+  !J#5!K%W%m%0%i%`$K<j$r2C$($k?M$NJX59$r$O$+$k$H$$$&0UL#$G!"xneko.map $H$$$&
+      %U%!%$%k$rE:IU$7$F$*$-$^$7$?!#!J:G?7%=!<%9$N4X?t8F=P4X78LZ9=B$?^$G$9!#!K
+      %W%m%0%i%`2~NI;~$N;29M;qNA$H$7$F$*LrN)$F2<$5$$!#
+
+  !J#6!K%P%0$r;XE&$7$F2<$5$C$? pcs30830 (homy) $5$s!"J#?t%W%l!<%sBP1~$N$?$a
+      $N%Q%C%A$rDs6!$7$F2<$5$C$? pcs26770 (BNS) $5$s!"5.=E$J;29M0U8+$r2<$5$C
+      $? pcs07778 (cano) $5$s!"$I$&$b$"$j$,$H$&$4$6$$$^$7$?!#$=$7$F:G8e$N:G
+      8e$K$J$j$^$7$?$,!"Macintosh $N neko $r:n$i$l$?J}!9$K7I0U$rI=$9$k$H$H$b
+      $K!"LLGr$$%F!<%^$rDs6!$7$F$$$?$@$$$?$3$H$K46<U$$$?$7$^$9!#
+
+
+								    - 0J>e -
+

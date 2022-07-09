@@ -1,0 +1,174 @@
+.TH ONEKO 6 "10 March 1991" "X Version 11"
+.SH NAME
+oneko \- cat-and-mouse chase all over your screen
+.SH SYNOPSIS
+oneko [
+.B -h
+] [
+.B -display
+.I display-name
+] [
+.B -bitmapdir
+.I directory-name
+] [
+.B -kotatsubitmap
+.I bitmapfile
+] [
+.B -kotatsubitmask
+.I bitmapmask
+] [
+.B -mousebitmap
+.I bitmapfile
+] [
+.B -mousebitmask
+.I bitmapmask
+] [
+.B -speed
+.I dots
+] [
+.B -time
+.I interval
+] [
+.B -idle
+.I pixels
+] [
+.B -fg
+.I color
+] [
+.B -bg
+.I color
+] [
+.B -kfg
+.I color
+] [
+.B -kbg
+.I color
+] [
+.B -mfg
+.I color
+] [
+.B -mbg
+.I color
+] [
+.B -noshape
+] [
+.B -nomouse
+] [
+.B -saveunder
+] [
+.B -xrm
+.I resource
+] [
+.B -mail
+] [
+.B -update
+.I seconds
+]
+.SH DESCRIPTION
+.I Oneko
+displays a cat which chases your "mouse" cursor all over the screen.
+Try moving the mouse in the middle of your screen and at the edges,
+leaving it stationary, moving it slowly and quickly, etc., and watch
+the cat respond.
+.PP
+The program was originally written by a Japanese author as a
+Macintosh\(TM desktop accessory (The word "neko" means "cat" in
+Japanese).
+.SH OPTIONS
+The following command-line options are supported by
+.IR oneko :
+.TP
+.B -h
+makes
+.I oneko
+print a help message and exit.
+.TP
+.BI -display " display"
+specifies the X display on which the cat should appear.
+.TP
+.BI -bitmapdir " directory"
+specifies the directory name which contains animation bitmap files.
+You can use a set of bitmap patterns that you are designed.
+It takes /usr/lib/X11/oneko/
+.I Command-name
+as default value.
+.TP
+.BI -kotatsubitmap " bitmapfile"
+specifies a bitmap file name for "kotatsu". It takes
+/usr/lib/X11/oneko/kotatsu.xbm as default value.
+.TP
+.BI -kotatsubitmask " bitmapmask"
+specifies a bitmap mask file name for "kotatsu". It takes
+/usr/lib/X11/oneko/kotatsu_mask.xbm as default value.
+.TP
+.BI -mousebitmap " bitmapfile"
+specifies a bitmap file name for mouse cursor. It takes
+/usr/lib/X11/oneko/cursor.xbm as default value.
+.TP
+.BI -mousebitmask " bitmapmask"
+specifies a bitmap mask file name for mouse cursor. It takes
+/usr/lib/X11/oneko/cursor_mask.xbm as default value.
+.TP
+.BI -speed " speed"
+specifies the speed of the cat (the default is 16 pixels per move).
+.TP
+.BI -time " interval"
+specifies the interval (in microseconds) between updates of the
+cat (the default is 125000).
+.TP 
+.BI -idle " pixels"
+specifies the maximum number of pixels the mouse can move while the
+cat remains idle (the default is 6).
+.TP
+.BI -fg " color"
+specifies the foreground color of the cat.
+.TP
+.BI -bg " color"
+specifies the background color of the cat.
+.TP
+.BI -kfg " color"
+specifies the foreground color of the "kotatsu".
+.TP
+.BI -kbg " color"
+specifies the background color of the "kotatsu".
+.TP
+.BI -mfg " color"
+specifies the foreground color of the mouse cursor.
+.TP
+.BI -mbg " color"
+specifies the background color of the mouse cursor.
+.TP
+.B -noshape
+tells
+.I oneko
+not to use the X shape extension to create its window the same shape
+as the cat.  If this option is specified (or if your X installation
+does not support the shape extension), then the cat will appear in a
+small rectangular window, and will probably run slightly faster.
+.TP
+.B -nomouse
+do not effect root cursor. If you don't specified this, mouse cursor on
+root window changes to the "mouse".
+.TP
+.B -saveunder
+tells
+.I oneko
+to use save under function.
+.TP
+.B -mail
+tells
+.I oneko
+to check if mail has come.
+.TP
+.BI -update " seconds"
+This option specifies the frequency  in  seconds  at which
+.I oneko
+should check new mail. The default is 60 seconds.
+.SH SEE ALSO
+X(1), xneko(6)
+.SH DIAGNOSTICS
+A usage message when improper arguments are supplied.
+.SH AUTHOR
+Tatsuya Kato (kato@ntts.co.jp), 1990,1991.
+.br
+Based xneko; written by Masayuki Koba, 1990.

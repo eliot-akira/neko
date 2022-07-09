@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neko98", "Neko98.vcproj", "{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NekoCFG", "NekoCFG\NekoCFG.vcproj", "{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Debug|Win32.Build.0 = Debug|Win32
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Debug|x64.ActiveCfg = Debug|x64
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Debug|x64.Build.0 = Debug|x64
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Release|Win32.ActiveCfg = Release|Win32
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Release|Win32.Build.0 = Release|Win32
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Release|x64.ActiveCfg = Release|x64
+		{83EABCC5-4247-43DD-A941-F7E76FA7C5A6}.Release|x64.Build.0 = Release|x64
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Debug|Win32.Build.0 = Debug|Win32
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Debug|x64.ActiveCfg = Debug|x64
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Debug|x64.Build.0 = Debug|x64
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Release|Win32.ActiveCfg = Release|Win32
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Release|Win32.Build.0 = Release|Win32
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Release|x64.ActiveCfg = Release|x64
+		{4BD17A4F-5310-41E6-9BA6-D8BDF6ADD2F8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

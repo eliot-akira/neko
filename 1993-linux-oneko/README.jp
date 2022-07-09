@@ -1,0 +1,153 @@
+		oneko - Neko runs over the windows.
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			   Version 2.0 beta
+			    March 3rd 1992
+
+
+			    Programed by Tatsuya Kato (kato@ntts.co.jp)
+			    Based xneko written by Masayuki Koba
+
+oneko は画面の上を縦横無尽に走り回る「Ｘウィンドウ版 猫」です。これは 
+Masayuki Koba さんの作成した xneko を元にいくつかの機能アップを計った
+ものです。
+
+
+＜バージョンアップについて＞
+
+  Version 2.0 ではいろいろな機能が追加されています。主なところでは、
+
+・こたつが画面上にある間は猫はこたつでおとなしくしている。
+  動き回る猫を追いかけて猫の上でマウスボタンを押しましょう。ボタンによっ
+て機能は違いますが、
+	マウスボタン１でこたつをだす。
+	マウスボタン２でこたつが消える。
+	マウスボタン３で oneko の終了。
+  というふうになっています。マウスボタン１でこたつが現れたらマウスをド
+ラッグして適当な場所で離して下さい。その場所にこたつがおかれ、猫はそこ
+でおとなしく寝てしまいます。この状態でこたつまたは猫をボタン１でドラッ
+グするとこたつは移動し、ボタン２でこたつは消えます。
+
+・-noshape 時に枠を見えなくする。
+  Shape extention のないサーバで使いたいという要望が意外に多いため、
+-noshape オプション指定時にも枠を作らないような表示の仕方に変更しました。
+  ただし、この方法では完全な表示は出来なません。例えば、猫が停止してい
+る状態で下のウインドウの絵が書き替わった場合や、こたつを移動した場合に
+画面が乱れてしまいます。
+
+・メイルが来るとメイルボックスが画面に現れます。そうすると猫はネズミや
+こたつを無視してメイルボックスのところまで走っていきます。
+
+・すべてのビットマップは実行時に読み込みます。（いままではコンパイル時
+にデータとして一緒にリンクしていました。）このため、猫以外のビットマッ
+プを作って実行時にリソースやオプションで切替えることが可能になりました。
+
+こんなところです。詳しくは CHANGES を御覧下さい。
+
+
+＜実行条件＞
+
+  このプログラムを実行するには X Window System が必要です。実行する上
+で必要な X サーバのリリースは R2 以上ですが、R4 で採り入れられた Shape
+extention を使用した方が画面を乱さないため、出来る限り Shape extention 
+つきのサーバで実行して下さい。
+  動作が確認されているマシン、ＯＳおよび X Window System のバージョン
+は以下の通りです。
+
+	Ashahi-PC DTK Career486H (IBM PC 互換機) + 386bsd 0.1 + XFree86 1.2
+	SunOS 4.0.3 + X11R5
+	SunOS 4.0.? + X11R4
+	SunOS 4.1.1 + JLE 1.1.1 + OpenWindows 2.0.1
+	NCD-17c (X Terminal) + SunOS
+
+
+＜インストール方法＞
+
+oneko のインストールは以下の手順で行なって下さい。
+
+	% cd ONEKOのDIRECTORY
+	% xmkmf
+	% make depend
+	% make
+	% su
+	# make install
+
+make install を実行した場合、次のものがインストールされます。
+
+$(BINDIR)/oneko			oneko の実行ファイル
+$(BINDIR)/tora			とら猫バージョンの oneko 
+$(LIBDIR)/app-defaults/Oneko	アプリケーションデフォルトファイル
+$(LIBDIR)/oneko/help		ヘルプファイル
+$(LIBDIR)/oneko/*.xbm		こたつ、ねずみのビットマップファイル
+$(LIBDIR)/oneko/oneko/*.xbm	oneko のアニメーションビットマップ
+$(LIBDIR)/oneko/tora/*.xbm	tora のアニメーションビットマップ
+
+マニュアルは日本語バージョンと英語バージョンが用意されています。日本語
+バージョンをインストールする場合は、
+
+	% mv oneko.man oneko.man.english
+	% mv oneko.man.jp oneko.man
+
+としてから make install.man してください。
+
+Ｘサーバや OS の機能によっていくつかのコンパイルオプションが用意されて
+います。
+
+    SHAPE		Shape エクステンションを使う場合に定義します。
+			デフォルトでは定義されています。
+    ONEKODIR		ビットマップファイルのディレクトリを指定します。
+			デフォルトでは $(LIBDIR)/oneko です。
+    NO_CUSERID		関数 cuserid() のないマシンを利用する時に定義
+			して下さい。
+    MAILBOX＿DIRECTORY	メイルボックスファイルのあるディレクトリ名。デ
+			フォルトでは /usr/spool/mail/ (BSD 系)
+			/usr/mail/ (SYSV 系) /var/mail/ (SVR4) が使わ
+			れます。
+
+＜使用方法＞
+
+% oneko
+
+として実行して下さい。オプションはたくさんありますが、Manual page を御
+覧下さい。
+
+＜謝辞＞
+
+お猫の生い立ちは多くの方々の協力なしには語れません。特にこの Version
+2.0 のアイディア、バグとりなどに協力して下さった方々のお名前をここにあ
+げさせていただきます。
+
+	Jonathan I. Kamens さん (jik@pit-manager.MIT.EDU)
+	Juha Sarlin さん (juha@elixir.lne.kth.se)
+	Nathan Sidwell さん (nathan@inmos.co.uk)
+
+	Project Oneko Mailing List の皆さん:
+	  古畑＠東大 さん (furuhata@fujita3.iis.u-tokyo.ac.jp)
+	  山西＠ブリッジ さん (masato@bridge.co.jp)
+	  山形＠松下ソフトリサーチ さん (yamagata@aisl.msr.mei.co.jp)
+	  滝谷＠ＹＨＰ さん (takiya@hpycla.kobe.yhp.co.jp)
+	  大隅＠慶應 さん (ohsumi@aa.cs.keio.ac.jp)
+	  近藤＠富士通研 さん (tacchan@soft.flab.fujitsu.co.jp)
+	  纐纈＠東大 さん (k2@eri.u-tokyo.ac.jp)
+	  久米川＠関西大学 さん (kumegawa@iesys11.iecs.kansai-u.ac.jp)
+	  鈴木＠東大 さん (suzuki@graco.c.u-tokyo.ac.jp)
+	  西田＠リコー さん (nishida@lennon.src.ricoh.co.jp)
+	  福田＠山形大 さん (SD002@kdw01.kj.yamagata-u.ac.jp)
+
+	そして、oneko の元になった xneko を作っていただいた、古場さん
+	に感謝の意を表したいと思います。
+
+この他にもたくさんの方から感想や助言、マニュアルファイルなどを頂きまし
+た。本当にありがとうございました。
+
+まだまだ問題があると思いますが、より良いものにしていきたいと思っていま
+すのでよろしくお願いいたします。
+
+P.S.
+  この Version 2.0 は実は１年以上前に作られたものです。私があまり X
+Window に触れない状態になってしまったために、公開されないままほってお
+かれました。この２年の間に特に海外から oneko のバグや機能追加、質問等
+の問い合わせをいただきましたがほとんど対応できない状態で申し訳ございま
+せんでした。
+  今回公開するバージョンは実は Beta バージョンで実現したかった機能の一
+部がまだインプリメントしていなかったり、バグっていたりします。不完全な
+ままで申し訳ございません。

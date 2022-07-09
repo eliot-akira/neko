@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">ANeko</string>
+
+  <string name="skin_name_neko">neko</string>
+
+  <string name="notification_enable">neko 実行中。</string>
+  <string name="notification_disable">neko 停止中。</string>
+
+  <string name="pref_cat_motion">設定</string>
+
+  <string name="pref_motion_enable_title">neko を有効にする</string>
+  <string name="pref_motion_enable_summary">neko を表示するか否か。</string>
+
+  <string name="pref_motion_behaviour_title">挙動</string>
+  <string name="pref_motion_behaviour_summary">neko の挙動</string>
+
+  <string name="pref_motion_transparency_title">透明度</string>
+  <string name="pref_motion_transparency_summary">neko の透明度</string>
+
+  <string name="pref_motion_skin_title">スキン</string>
+  <string name="pref_motion_skin_summary">neko の皮</string>
+  <string name="pref_skin_dialog_title">スキン</string>
+  <string name="pref_skin_search_button">スキンを検索</string>
+
+  <string name="msg_skin_load_failed">スキン読み込み失敗。</string>
+  <string name="msg_market_not_found">マーケットアプリケーションが見付からないようです。</string>
+</resources>

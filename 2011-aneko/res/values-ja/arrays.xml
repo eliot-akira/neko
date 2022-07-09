@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- transparency -->
+  <string-array name="pref_motion_transparency_entries">
+    <item>0% (不透明)</item>
+    <item>20%</item>
+    <item>40%</item>
+    <item>60%</item>
+    <item>80%</item>
+  </string-array>
+
+  <!-- behaviour -->
+  <string-array name="pref_motion_behaviour_entries">
+    <item>近づく</item>
+    <item>遠ざかる</item>
+    <item>気まぐれ</item>
+  </string-array>
+</resources>

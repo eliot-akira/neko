@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- behaviour -->
+  <string-array name="pref_motion_behaviour_entries">
+    <item>気まぐれ</item>
+  </string-array>
+</resources>

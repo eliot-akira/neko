@@ -1,0 +1,24 @@
+For no real reason today I remmeber that there used to be this cool program back in the Windows 3.0 days called Neko.  I was trying to explain it to my girlfriend about this cat that would chase your mouse!
+
+I recal that Neko even made it to OS/2 as it was more interesting then the mouse trails alternative from Microsoft.
+
+At any rate, I was wondering if there ever was a 32bit version of Neko... And much to my amazement I found there was a Neko95, and a Neko98!  And they even ran on my x64 version of Windows...  So after googling around, I found the source code to Neko 98!
+
+http://in.sert.co.in/neko/neko.html
+
+So I did the next best thing, which is download the source, fix a single casting 'error' in some square root function and I got it building under Visual C++ 2008.
+
+Then I figured, what the hell, added a target for the x64, and built... a 64 bit version of neko!
+
+I've included the x64 release binaries, and the source directory that I used.
+
+You may need some VC runtimes if your system is an old x64...
+
+At this moment it can be found here:
+
+http://www.microsoft.com/downloads/details.aspx?familyid=BA9257CA-337F-4B40-8C14-157CFDFFEE4E&displaylang=en
+
+Searching for Microsoft Visual C++ 2008 SP1 Redistributable Package (x64)
+
+
+Oh well at any rate, it's cool to see Neko still kicking!

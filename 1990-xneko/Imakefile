@@ -1,0 +1,5 @@
+LOCAL_LIBRARIES = -lX11 -lm
+
+SimpleProgramTarget(xneko)
+
+install:: install.man

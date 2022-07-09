@@ -1,0 +1,89 @@
+                                Neko
+                             Version 2.0 
+                           "Neko Runs Free"
+
+                            Dara T. Khani
+                            (c) 1991-1992
+
+
+This program is the Windows 3.X version of Neko.
+Neko means cat in Japanese.  The original program (non MS-Windows)
+was written by Masayuki Koba and later modified by Tatsuya Kato.
+
+NOTE: Neko will NOT run in Windows REAL MODE.
+
+"Neko Runs Free"
+Iconify the Neko window to make Neko run around the Desktop.
+
+When you run the program, a window is opened with Neko inside it.
+As you move the mouse, Neko will follow.  If the mouse is inside the
+window and it is not moving, Neko will go to sleep.  When the mouse 
+is moved Neko will awake and will chase the mouse.  If the mouse is
+outside the window and it is not moving, Neko will scratch the window
+boundary and goes to sleep.
+
+-The Settings option can be used to modify Neko's parameters.
+
+-The background and Neko's color can be modified with the Color option.
+ "RGB" stands for Red, Green, and Blue.
+
+- Size of Neko can be changed through the Size option.
+
+
+
+Registration:
+--------------
+Neko is a ThankYouWare.  To say thank you, 
+please send $9 and a post card of your city to:
+
+                       Dara T. Khani
+                       109 Sassafras Rd.
+                       Aiken, SC 29803
+
+       Internet:       dtk@hpuerca.atl.hp.com
+
+I greatly appreciate all the comments I have received.  
+I had NO IDEA Neko was going to produce such a tremendous response.
+I hope you like this version as well. Please send any suggestions, 
+comments, or bug reports to the above address.
+
+
+License Agreement
+-----------------
+Neko is a copyrighted material. 
+You may not make any changes or modifications to Neko. 
+This program may be freely copied and distributed, as long as 
+this text file is always included with the executable. 
+
+
+Disclaimer 
+----------
+No warranty exists, either express or implied.
+No liability is assumed for any damage or loss
+resulting from the use of this program.
+
+----------------------------------------------------------------------
+
+Revision history
+----------------
+
+Version 2.0 - Oct.  1, 1992
+- Neko Runs Free
+
+Version 1.3 - 1.9
+- Not Released
+
+Version 1.2 - July  1, 1991
+- Bug fix: The background was not restored correctly when Neko was
+           placed in the Load option of Win.ini .
+- Improvement: No more hard disk banging when Neko is moving.
+
+Version 1.1 - June 10, 1991
+- Bug fix: Transition was not being made to two of Neko's states.
+- Added the Color option.
+- Added a setup file, Neko.ini .
+- Made the cursor a "mouse".
+
+
+Version 1.0 - Apr. 15, 1991
+Initial release version.

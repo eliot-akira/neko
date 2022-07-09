@@ -1,0 +1,50 @@
+# $Id: Imakefile.R4,v 1.16 1992/03/17 14:08:41 kato Exp kato $
+
+    ONEKOLIBDIR = $(LIBDIR)/oneko
+        BMFILES = bitmaps/\*.xbm
+          BMDIR = $(ONEKOLIBDIR)/oneko
+   TORA_BMFILES = bitmaps.tora/\*.xbm
+     TORA_BMDIR = $(ONEKOLIBDIR)/tora
+  KOTATSUCURSOR = kotatsu.xbm kotatsu_mask.xbm
+     POSTCURSOR = post.xbm post_mask.xbm
+    MOUSECURSOR = cursor.xbm cursor_mask.xbm
+    CURSORFILES = $(KOTATSUCURSOR) $(POSTCURSOR) $(MOUSECURSOR)
+       HELPFILE = help
+
+LOCAL_LIBRARIES = $(XMULIB) $(XLIB)
+  SYS_LIBRARIES = -lm
+        DEPLIBS = $(DEPXLIB)
+    CDEBUGFLAGS = -g
+        DEFINES = -DSHAPE -DONEKODIR=\"$(ONEKOLIBDIR)\" -DLIBDIR=\"$(LIBDIR)\"
+#       DEFINES = -DONEKODIR=\"$(ONEKOLIBDIR)\" -DLIBDIR=\"$(LIBDIR)\"
+           SRCS = oneko.c event.c init.c mail.c resource.c state.c
+           OBJS = oneko.o event.o init.o mail.o resource.o state.o
+
+ComplexProgramTarget(oneko)
+
+CppScriptTarget(Oneko.ad,Oneko.cpp,-DOnekoLib=$(ONEKOLIBDIR),)
+
+install::
+	$(MKDIRHIER) $(LIBDIR)/oneko
+	$(MKDIRHIER) $(LIBDIR)/oneko/oneko
+	$(MKDIRHIER) $(LIBDIR)/oneko/tora
+
+install:: $(BINDIR)/oneko
+	$(RM) $(BINDIR)/tora
+	$(LN) $(BINDIR)/oneko $(BINDIR)/tora
+
+InstallMultipleDestFlags(install,$(HELPFILE),$(ONEKOLIBDIR),$(INSTDATFLAGS))
+InstallMultipleDestFlags(install,$(BMFILES),$(BMDIR),$(INSTDATFLAGS))
+InstallMultipleDestFlags(install,$(TORA_BMFILES),$(TORA_BMDIR),$(INSTDATFLAGS))
+InstallMultipleDestFlags(install,$(CURSORFILES),$(ONEKOLIBDIR),$(INSTDATFLAGS))
+
+InstallAppDefaults(Oneko)
+
+clean::
+	$(RM) Oneko.ad
+	$(RM) FLOW
+
+# for debug.
+SingleProgramTarget(restest,resource.o restest.o,$(LOCAL_LIBRARIES),)
+FLOW: $(SRCS)
+	cflow $(SRCS) | grep '	[A-WYZ]' > FLOW

@@ -1,0 +1,251 @@
+.TH ONEKO 6 "29 October 1991" "X Version 11"
+.SH 名前
+oneko \- X Window の画面上で猫とねずみがおっかけっこするプログラム
+.SH 形式
+oneko [
+.B -h
+] [
+.B -display
+.I display-name
+] [
+.B -bitmapdir
+.I directory-name
+] [
+.B -kotatsubitmap
+.I bitmapfile
+] [
+.B -kotatsubitmask
+.I bitmapmask
+] [
+.B -mousebitmap
+.I bitmapfile
+] [
+.B -mousebitmask
+.I bitmapmask
+] [
+.B -speed
+.I dots
+] [
+.B -time
+.I interval
+] [
+.B -idle
+.I pixels
+] [
+.B -fg
+.I color
+] [
+.B -bg
+.I color
+] [
+.B -kfg
+.I color
+] [
+.B -kbg
+.I color
+] [
+.B -mfg
+.I color
+] [
+.B -mbg
+.I color
+] [
+.B -noshape
+] [
+.B -nomouse
+] [
+.B -saveunder
+] [
+.B -xrm
+.I resource
+] [
+.B -mail
+] [
+.B -update
+.I seconds
+]
+.SH 機能説明
+.I Oneko
+は X Window 上で動作する猫です。「お猫」と呼んであげて下さい。
+.PP
+.I oneko
+を実行すると画面に猫が現れてねずみを追いかけます。マウスを動かしてみた
+り、止めてみたり、画面の端に持っていってみたりして、猫の動きをお楽しみ
+下さい。
+.PP
+猫を左マウスボタンでクリックすると「こたつ」が画面に現れます。そのまま
+マウスをドラッグして「こたつ」の位置を決めて下さい。「こたつ」が現れる
+と、猫はねずみを追いかけるのをやめて「こたつ」で寝てしまいます。
+.PP
+こたつの操作はマウスで行なって下さい。左マウスボタンでこたつを移動し、
+中央マウスボタンでこたつが画面から消えます。右マウスボタンでクリックす
+ると「お猫」が終了します。
+.SH オプション
+.I oneko
+には次のようなオプションがあります。
+.TP
+.B -help
+ヘルプメッセージを表示します。
+.TP
+.BI -display " display"
+.I oneko
+を表示するディスプレイを指定します。
+.TP
+.BI -bitmapdir " directory"
+アニメーションのためのビットマップファイルがあるディレクトリを指定しま
+す。デフォルトでは /usr/lib/X11/oneko/
+.I Command-name
+のディレクトリから、ビットマップを探します。
+.TP
+.BI -kotatsubitmap " bitmapfile"
+こたつを表示するためのビットマップファイル名を指定します。デフォルトで
+は /usr/lib/X11/oneko/kotatsu.xbm を読み込みます。
+.TP
+.BI -kotatsubitmask " bitmapmask"
+こたつを表示するためのビットマップマスクファイル名を指定します。デフォ
+ルトでは /usr/lib/X11/oneko/kotatsu_mask.xbm を読み込みます。
+.TP
+.BI -mousebitmap " bitmapfile"
+マウスカーソルを表示するためのビットマップファイル名を指定します。デフォ
+ルトでは /usr/lib/X11/oneko/cursor.xbm を読み込みます。
+.TP
+.BI -mousebitmask " bitmapmask"
+マウスカーソルを表示するためのビットマップマスクファイル名を指定します。
+デフォルトでは /usr/lib/X11/oneko/cursor_mask.xbm を読み込みます。
+.TP
+.BI -speed " speed"
+猫の速さを指定します。
+.I speed
+は -time オプションで指定した時間内に猫が進む距離で、pixel 単位で指定
+します。デフォルトは 16 です。
+.TP
+.BI -time " interval"
+猫のアニメーションの再描画時間をマイクロ秒単位で指定します。デフォルト
+は 125000 です。
+.TP 
+.BI -idle " pixels"
+眠っている猫が動き出す時のマウスの速度を指定します。この値を大きくする
+となかなか目が醒めない「鈍い猫」になります。
+.TP
+.BI -fg " color"
+猫の前景色を指定します。
+.TP
+.BI -bg " color"
+猫の背景色を指定します。
+.TP
+.BI -kfg " color"
+こたつの前景色を指定します。
+.TP
+.BI -kbg " color"
+こたつの背景色を指定します。
+.TP
+.BI -mfg " color"
+マウスカーソルの前景色を指定します。
+.TP
+.BI -mbg " color"
+マウスカーソルの背景色を指定します。
+.TP
+.B -noshape
+Shape extension を使用せずに実行するよう指定します。このオプションを指
+定すると大抵のサーバでは表示が高速化されますが、画面を乱す場合があるの
+で shape extension のあるサーバでは指定しない方が無難です。このオプショ
+ンを指定しなくても shape extension のないサーバでは指定した場合と同じ
+です。
+.TP
+.B -nomouse
+このオプションを指定すると、ルートウインドウのマウスカーソルの形状を変
+更しません。デフォルトではルートウインドウのマウスカーソルをねずみの形
+に変更します。
+.TP
+.B -saveunder
+SaveUnder 機能を使用します。これを指定した方が表示がよりスムースに行な
+われるようです。
+.TP
+.B -mail
+このオプションを指定した時、猫はメイルの到着を知らせます。
+.TP
+.BI -update " seconds"
+猫がメイルの到着を調べる時間の間隔を秒単位に指定します。デフォルトは
+ 60 秒です。
+.TP
+.BI -file " file name"
+メイルのチェックのために監視するファイル名を指定します。
+.TP
+.B -autoraise
+猫が他のウィンドウに隠されないように、VisiblityNotify をチェックして
+猫を raise させます。このオプションを使うと xlock などのスクリーン
+ロックプログラムを使った時でも猫が表示されてしまいます。デフォルトで
+はマウスカーソルを移動した時のみ raise を行ないます。
+.SH リソース
+次のリソースを指定することにより
+.I oneko
+の動作を変えることが出来ます。
+.TP
+.B .bitmapdir
+アニメーションのためのビットマップファイルがあるディレクトリを指定しま
+す。
+.TP
+.B .kotatsu.bitmap
+こたつを表示するためのビットマップファイル名を指定します。
+.TP
+.B .kotatsu.bitmask
+こたつを表示するためのビットマップマスクファイル名を指定します。
+.TP
+.B .cursor.bitmap
+マウスカーソルを表示するためのビットマップファイル名を指定します。
+.TP
+.B .cursor.bitmask
+マウスカーソルを表示するためのビットマップマスクファイル名を指定します。
+.TP
+.B .speed
+猫の速さを指定します。
+.TP
+.B .time
+猫のアニメーションの再描画時間をマイクロ秒単位で指定します。
+.TP 
+.B .idle
+眠っている猫が動き出す時のマウスの速度を指定します。
+.TP
+.B .foreground
+猫の前景色を指定します。
+.TP
+.B .background
+猫の背景色を指定します。
+.TP
+.B .kotatsu.foreground
+こたつの前景色を指定します。
+.TP
+.B .kotatsu.background
+こたつの背景色を指定します。
+.TP
+.B .cursor.foreground
+マウスカーソルの前景色を指定します。
+.TP
+.B .cursor.background
+マウスカーソルの背景色を指定します。
+.TP
+.B .noshape
+Shape extension を使用せずに実行します。
+.TP
+.B .nomouse
+このリソースを指定すると、ルートウインドウのマウスカーソルの形状を変
+更しません。
+.TP
+.B .saveunder
+SaveUnder 機能を使用します。
+.TP
+.B .mail
+このリソースを指定した時、猫はメイルの到着を知らせます。デフォルトは
+true です。
+.TP
+.BI .update " seconds"
+猫がメイルの到着を調べる時間の間隔を秒単位に指定します。デフォルトは
+ 60 秒です。
+.SH 関連項目
+X(1), xneko(6)
+.SH 診断
+間違ったコマンド引数を指定した場合、使用法のメッセージを出力します。
+.SH 著者
+Tatsuya Kato (kato@ntts.co.jp), 1990,1991.
+.br
+Based xneko; written by Masayuki Koba, 1990.

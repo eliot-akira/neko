@@ -1,0 +1,29 @@
+---------------------
+Neko image libraries
+---------------------
+
+note: only those people who requested credit have been credited.
+
+	Dog.icl			(came with original x-windows version)
+	Tabby.icl               (came with original x-windows version)
+
+	Blue Tabby.icl		[Shaun - tinker@thevision.net]
+	Calico Tabby.icl	[Jeannine - tinker@thevision.net]
+	Coke Bottle.icl 	[Andrew Douglas - douglas@bmts.com]
+	DeeDee.icl              [orion@acca.nmsu.edu]
+	Nekocool.icl            [orion@acca.nmsu.edu]
+	Worms.icl		[Neil Roberts - turkey@emails.com]
+	Caz.icl			[Greg Allen - mcbeth@cyou.com]
+        Zelda3.icl		[Mike May - cmmay@ns.sympatico.ca]
+        Ff3Mog.icl		Mike May - cmmay@ns.sympatico.ca]
+
+---------------------
+about the BSD Daemons
+---------------------
+
+ The BSD Daemon is copyright 1988 by Marshall Kirk McKusick. All
+ rights reserved. If you wish to incorporate the BSD daemon (including
+ but not limited to these bitmaps) into other software you must
+ contact mckusick@mckusick.com for permission. Please note that
+ the BSD Daemon bitmaps MAY NOT be used in any software that is not
+ freely redistributed in source and binary form.

@@ -1,0 +1,26 @@
+usage:  oneko [options] ....
+
+Options are:
+-display <display>        specifies the the display name.
+-bitmapdir <dir>          specifies the directory name contains bitmap files.
+-kotatsubitmap <bitmap>   specifies a bitmap file name for "kotatsu".
+-kotatsubitmask <bitmap>  specifies a bitmap mask file name for "kotatsu".
+-mousebitmap <bitmap>     specifies a bitmap file name for mouse cursor.
+-mousebitmask <bitmap>    specifies a bitmap mask file name for mouse cursor.
+-speed <speed>            specifies the speed of the cat.
+-time <interval>          specifies the interval between updates of the cat.
+-idle <pixels>            specifies the maximum number of pixels the mouse can
+                          move while the cat remains idle.
+-fg <color>               specifies the foreground color of the cat.
+-bg <color>               specifies the background color of the cat.
+-kfg <color>              specifies the foreground color of the "kotatsu".
+-kbg <color>              specifies the background color of the "kotatsu".
+-mfg <color>              specifies the foreground color of the mouse cursor.
+-mbg <color>              specifies the background color of the mouse cursor.
+-noshape                  tells oneko not to use the X shape extension.
+-nomouse                  do not effect root cursor.
+-saveunder                tells oneko to use save under function.
+-mail                     check mail has arrived.
+-update <sec>             interval time (seconds) for checking mail.
+-file <file_name>         specifies file name to check mail.
+-autoraise                always raise up himself.

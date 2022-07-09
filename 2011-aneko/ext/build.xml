@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="all">
+  <property name="imagemagick.convert.path" value="gm" />
+  <property name="imagemagick.convert.arg" value="convert" />
+
+  <property name="src.dir" location="." />
+  <property name="res.dir" location="../res" />
+  <property name="ext.dir" location="." />
+
+  <property name="icon.src.path"
+            location="${res.dir}/drawable-mdpi/mati1.png" />
+
+  <property name="icon.512x512.path"
+            location="${ext.dir}/icon-512x512.png" />
+  <property name="icon.180x120.path"
+            location="${ext.dir}/icon-180x120.png" />
+  <property name="icon.1024x500.path"
+            location="${ext.dir}/icon-1024x500.png" />
+
+  <property name="neko.src.dir"
+            location="${res.dir}/drawable-mdpi" />
+  <property name="neko.dst.dir"
+            location="${res.dir}/drawable-xhdpi" />
+
+  <target name="all" depends="icons, neko" />
+
+  <target name="icons">
+    <icon-scale size="96" extent="96x96" background="#ffffff00"
+                dst="${res.dir}/drawable-xhdpi/icon.png" />
+    <icon-scale size="64" extent="72x72-4-4" background="#ffffff00"
+                dst="${res.dir}/drawable-hdpi/icon.png" />
+    <icon-scale size="48" extent="48x48" background="#ffffff00"
+                dst="${res.dir}/drawable-mdpi/icon.png" />
+    <icon-scale size="32" extent="36x36-2-2" background="#ffffff00"
+                dst="${res.dir}/drawable-ldpi/icon.png" />
+
+    <icon-scale size="512" extent="512" background="#ffffff"
+                dst="${icon.512x512.path}" />
+    <icon-scale size="112" extent="180x120-34-4" background="#ffffff"
+                dst="${icon.180x120.path}" />
+    <icon-scale size="480" extent="1024x500-262-10" background="#ffffff"
+                dst="${icon.1024x500.path}" />
+  </target>
+
+  <macrodef name="icon-scale">
+    <attribute name="size" />
+    <attribute name="extent" />
+    <attribute name="background" />
+    <attribute name="dst" />
+    <sequential>
+      <antcall target="icon-scale">
+        <param name="icon.scale.size" value="@{size}" />
+        <param name="icon.scale.extent" value="@{extent}" />
+        <param name="icon.scale.background" value="@{background}" />
+        <param name="icon.scale.dst" value="@{dst}" />
+      </antcall>
+    </sequential>
+  </macrodef>
+
+  <uptodate property="icon.scale.updated"
+            srcfile="${icon.src.path}"
+            targetfile="${icon.scale.dst}" />
+  <target name="icon-scale" unless="icon.scale.updated">
+    <exec executable="${imagemagick.convert.path}"
+          failonerror="true">
+      <arg value="${imagemagick.convert.arg}" />
+      <arg value="-background" />
+      <arg value="${icon.scale.background}" />
+      <arg value="${icon.src.path}" />
+      <arg value="-filter" />
+      <arg value="point" />
+      <arg value="-resize" />
+      <arg value="${icon.scale.size}" />
+      <arg value="-extent" />
+      <arg value="${icon.scale.extent}" />
+      <arg value="-depth" />
+      <arg value="8" />
+      <arg value="${icon.scale.dst}" />
+    </exec>
+  </target>
+
+  <target name="neko">
+    <neko-xhdpi drawable="akubi_l" />
+    <neko-xhdpi drawable="akubi_r" />
+    <neko-xhdpi drawable="akubi1" />
+    <neko-xhdpi drawable="akubi2" />
+    <neko-xhdpi drawable="awake" />
+    <neko-xhdpi drawable="down1" />
+    <neko-xhdpi drawable="down2" />
+    <neko-xhdpi drawable="dtogi1" />
+    <neko-xhdpi drawable="dtogi2" />
+    <neko-xhdpi drawable="dwleft1" />
+    <neko-xhdpi drawable="dwleft2" />
+    <neko-xhdpi drawable="dwright1" />
+    <neko-xhdpi drawable="dwright2" />
+    <neko-xhdpi drawable="kaki1" />
+    <neko-xhdpi drawable="kaki2" />
+    <neko-xhdpi drawable="left1" />
+    <neko-xhdpi drawable="left2" />
+    <neko-xhdpi drawable="ltogi1" />
+    <neko-xhdpi drawable="ltogi2" />
+    <neko-xhdpi drawable="mati1" />
+    <neko-xhdpi drawable="mati2" />
+    <neko-xhdpi drawable="right1" />
+    <neko-xhdpi drawable="right2" />
+    <neko-xhdpi drawable="rtogi1" />
+    <neko-xhdpi drawable="rtogi2" />
+    <neko-xhdpi drawable="sleep1" />
+    <neko-xhdpi drawable="sleep2" />
+    <neko-xhdpi drawable="up1" />
+    <neko-xhdpi drawable="up2" />
+    <neko-xhdpi drawable="upleft1" />
+    <neko-xhdpi drawable="upleft2" />
+    <neko-xhdpi drawable="upright1" />
+    <neko-xhdpi drawable="upright2" />
+    <neko-xhdpi drawable="utogi1" />
+    <neko-xhdpi drawable="utogi2" />
+  </target>
+
+  <macrodef name="neko-xhdpi">
+    <attribute name="drawable" />
+    <sequential>
+      <antcall target="neko-xhdpi">
+        <param name="neko.src.path" value="${neko.src.dir}/@{drawable}.png" />
+        <param name="neko.dst.path" value="${neko.dst.dir}/@{drawable}.png" />
+      </antcall>
+    </sequential>
+  </macrodef>
+
+  <uptodate property="neko-xhdpi.updated"
+            srcfile="${neko.src.path}"
+            targetfile="${neko.dst.path}" />
+  <target name="neko-xhdpi" unless="neko-xhdpi.updated">
+    <exec executable="${imagemagick.convert.path}"
+          failonerror="true">
+      <arg value="${imagemagick.convert.arg}" />
+      <arg value="${neko.src.path}" />
+      <arg value="-filter" />
+      <arg value="point" />
+      <arg value="-resize" />
+      <arg value="64x64" />
+      <arg value="-depth" />
+      <arg value="8" />
+      <arg value="${neko.dst.path}" />
+    </exec>
+  </target>
+</project>

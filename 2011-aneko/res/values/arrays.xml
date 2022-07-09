@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- transparency -->
+  <string-array name="pref_motion_transparency_entries">
+    <item>0% (opaque)</item>
+    <item>20%</item>
+    <item>40%</item>
+    <item>60%</item>
+    <item>80%</item>
+  </string-array>
+
+  <string-array name="pref_motion_transparency_entryvalues">
+    <item>0.0</item>
+    <item>0.2</item>
+    <item>0.4</item>
+    <item>0.6</item>
+    <item>0.8</item>
+  </string-array>
+
+  <!-- behaviour -->
+  <string-array name="pref_motion_behaviour_entries">
+    <item>Closer</item>
+    <item>Further</item>
+    <item>Whimsical</item>
+  </string-array>
+
+  <string-array name="pref_motion_behaviour_entryvalues">
+    <item>closer</item>
+    <item>further</item>
+    <item>whimsical</item>
+  </string-array>
+</resources>

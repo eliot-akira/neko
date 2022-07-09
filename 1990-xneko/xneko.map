@@ -1,0 +1,102 @@
+
+Function tree map:
+
+
+Tree map for NullFunction "xneko.c":
+
+	NullFunction                                                 "xneko.c"
+
+
+Tree map for main "xneko.c":
+
+	main                                                         "xneko.c"
+	  |- GetArguments                                            "xneko.c"
+	  |    |- Usage                                              "xneko.c"
+	  |    |    +- fprintf                       "C Standard Library (3S)"
+	  |    |
+	  |    |- atof                               "C Standard Library  (3)"
+	  |    |- atol                               "C Standard Library  (3)"
+	  |    |- exit                               "C Standard Library  (3)"
+	  |    |- fprintf                            "C Standard Library (3S)"
+	  |    |- strcmp                             "C Standard Library  (3)"
+	  |    |- strcpy                             "C Standard Library  (3)"
+	  |    |- strlen                             "C Standard Library  (3)"
+	  |    +- strncmp                            "C Standard Library  (3)"
+	  |
+	  |- InitScreen                                              "xneko.c"
+	  |    |- BlackPixel                                   "X11lib (3X11)"
+	  |    |- DefaultColormap                              "X11lib (3X11)"
+	  |    |- DefaultDepth                                 "X11lib (3X11)"
+	  |    |- DefaultScreen                                "X11lib (3X11)"
+	  |    |- InitBitmapAndGCs                                   "xneko.c"
+	  |    |    |- BlackPixel                              "X11lib (3X11)"
+	  |    |    |- DefaultDepth                            "X11lib (3X11)"
+	  |    |    |- RootWindow                              "X11lib (3X11)"
+	  |    |    |- WhitePixel                              "X11lib (3X11)"
+	  |    |    |- XCreateGC                               "X11lib (3X11)"
+	  |    |    |- XCreatePixmapFromBitmapData             "X11lib (3X11)"
+	  |    |    +- XFlush                                  "X11lib (3X11)"
+	  |    |
+	  |    |- RootWindow                                   "X11lib (3X11)"
+	  |    |- WhitePixel                                   "X11lib (3X11)"
+	  |    |- XAllocNamedColor                             "X11lib (3X11)"
+	  |    |- XCreateBitmapFromData                        "X11lib (3X11)"
+	  |    |- XCreatePixmapCursor                          "X11lib (3X11)"
+	  |    |- XCreateWindow                                "X11lib (3X11)"
+	  |    |- XFlush                                       "X11lib (3X11)"
+	  |    |- XGetGeometry                                 "X11lib (3X11)"
+	  |    |- XMapWindow                                   "X11lib (3X11)"
+	  |    |- XOpenDisplay                                 "X11lib (3X11)"
+	  |    |- XParseGeometry                               "X11lib (3X11)"
+	  |    |- XSelectInput                                 "X11lib (3X11)"
+	  |    |- XSetIconName                                 "X11lib (3X11)"
+	  |    |- XSetNormalHints                              "X11lib (3X11)"
+	  |    |- XSetWMHints                                  "X11lib (3X11)"
+	  |    |- XStoreName                                   "X11lib (3X11)"
+	  |    |- exit                               "C Standard Library  (3)"
+	  |    |- fprintf                            "C Standard Library (3S)"
+	  |    +- strlen                             "C Standard Library  (3)"
+	  |
+	  |- ProcessNeko                                             "xneko.c"
+	  |    |- NekoThinkDraw                                      "xneko.c"
+	  |    |    |- CalcDxDy                                      "xneko.c"
+	  |    |    |    |- XQueryPointer                      "X11lib (3X11)"
+	  |    |    |    +- sqrt                     "C Standard Library (3M)"
+	  |    |    |
+	  |    |    |- DrawNeko                                      "xneko.c"
+	  |    |    |    |- XFillRectangle                     "X11lib (3X11)"
+	  |    |    |    |- XFlush                             "X11lib (3X11)"
+	  |    |    |    +- XSetTSOrigin                       "X11lib (3X11)"
+	  |    |    |
+	  |    |    |- Interval                                      "xneko.c"
+	  |    |    |    +- pause                    "C Standard Library (3C)"
+	  |    |    |
+	  |    |    |- IsNekoDontMove                                "xneko.c"
+	  |    |    |- IsNekoMoveStart                               "xneko.c"
+	  |    |    |- IsWindowOver                                  "xneko.c"
+	  |    |    |- NekoDirection                                 "xneko.c"
+	  |    |    |    |- SetNekoState                             "xneko.c"
+	  |    |    |    +- sqrt                     "C Standard Library (3M)"
+	  |    |    |
+	  |    |    |- SetNekoState                                  "xneko.c"
+	  |    |    +- TickCount                                     "xneko.c"
+	  |    |
+	  |    |- ProcessEvent                                       "xneko.c"
+	  |    |    |- NekoAdjust                                    "xneko.c"
+	  |    |    |- ProcessKeyPress                               "xneko.c"
+	  |    |    |    +- XLookupString                      "X11lib (3X11)"
+	  |    |    |
+	  |    |    |- RedrawNeko                                    "xneko.c"
+	  |    |    |    |- XFillRectangle                     "X11lib (3X11)"
+	  |    |    |    +- XFlush                             "X11lib (3X11)"
+	  |    |    |
+	  |    |    +- XCheckMaskEvent
+	  |    |
+	  |    |- SetNekoState                                       "xneko.c"
+	  |    |- setitimer                     "UNIX 4.3 BSD System Call (2)"
+	  |    +- timerclear                    "UNIX 4.3 BSD System Call (2)"
+	  |
+	  |- exit                                    "C Standard Library  (3)"
+	  |- signal                                  "C Standard Library (3C)"
+	  +- sin                                     "C Standard Library (3M)"
+

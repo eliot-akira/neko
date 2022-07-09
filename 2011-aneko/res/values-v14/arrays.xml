@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- behaviour -->
+  <string-array name="pref_motion_behaviour_entries">
+    <item>Whimsical</item>
+  </string-array>
+
+  <string-array name="pref_motion_behaviour_entryvalues">
+    <item>whimsical</item>
+  </string-array>
+</resources>
