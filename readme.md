@@ -12,7 +12,7 @@ Neko is a cross-platform open-source animated cursor-chasing cat screenmate appl
 
 This is a historical archive of source code related to the Neko project.
 
-- [1998 - NEKO.COM (NEC PC-9801)](/1988-pc98)
+- [1988 - NEKO.COM (NEC PC-9801)](/1988-pc98)
 - [1990 - xneko (X Windows)](/1990-xneko)
 - [1992 - Neko Runs Free (Windows 3.x)](/1992-neko-for-windows-3)
 - [1993 - oneko (Linux)](/1993-linux-oneko)
