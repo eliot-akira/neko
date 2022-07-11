@@ -24,6 +24,7 @@ This is a historical archive of source code related to the Neko project.
 - [1998 - Neko98 (Windows)](/1998-windows-neko98)
 - [2000 - Replicat v1.06 (BeOS)](/2000-beos-replicat)
 - [2004 - webneko (JavaScript)](/2004-webneko)
+- [2010 - Neko in Java](/2010-neko-in-java)
 - [2010 - Neko touchscreen program (Arduino)](/2010-arduino)
 - [2010 - Neko x64 (Windows)](/2010-neko-x64)
 - [2011 - ANeko (Android)](/2011-aneko)
