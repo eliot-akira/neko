@@ -30,11 +30,15 @@ This is a historical archive of source code related to the Neko project.
 
 #### Neko DA for Macintosh
 
-![Neko Macintosh](1996-macintosh-neko-da/neko-macintosh.png)
+![Neko Macintosh](1989-macintosh-neko-da/neko-macintosh.png)
 
 #### Neko for Windows 3
 
 ![Neko Windows 3](1992-neko-for-windows-3/neko-for-windows-3.jpg)
+
+#### Cat and Mouse for OS/2
+
+![Cat and Mouse for OS/2](1991-os2-cat-and-mouse/OS2%20Cat%20Mouse%20w%20IBM%20copyright.png)
 
 #### Neko98
 
