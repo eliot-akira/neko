@@ -13,10 +13,10 @@ Neko is a cross-platform open-source animated cursor-chasing cat screenmate appl
 This is a historical archive of source code related to the Neko project.
 
 - [1988 - NEKO.COM (NEC PC-9801)](/1988-pc98)
+- [1989 - Neko DA (Macintosh)](/1989-macintosh-neko-da)
 - [1990 - xneko (X Windows)](/1990-xneko)
 - [1992 - Neko Runs Free (Windows 3.x)](/1992-neko-for-windows-3)
 - [1993 - oneko (Linux)](/1993-linux-oneko)
-- [1993 - Neko DA (Macintosh)](/1996-macintosh-neko-da)
 - [1997 - Icon Libraries (Windows)](/1997-icon-libraries)
 - [1998 - Neko98 (Windows)](/1998-windows-neko98)
 - [2000 - Replicat v1.06 (BeOS)](/2000-beos-replicat)
