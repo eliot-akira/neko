@@ -1,0 +1,63 @@
+
+
+
+
+                   Neko   version 1.03  
+
+                    for   Windows 3.0
+
+
+
+
+	Neko is a small cat that runs in a Window or on the Desktop 
+        and follows the mouse cursor. (if you run the first Neko as 
+        icon, Neko will use the Desktop.) 
+
+	There may be problems if you run Neko together with other
+	programmes that will attach the Desktop (like FUSE).
+
+
+
+
+
+
+	options:
+
+   	spleen: (0-100)   Nekos has a spleen!!  
+                                                (0 = never, 100 = often)
+   	egoism: (1-100)   How long is his tour?
+                                                (1 = short, 100 = long)
+   	black Neko:       Try!
+
+
+
+
+
+
+
+   	the story:
+
+	I think the original was programmed on a Mac. I found the source
+ 	of the program (X11-version) on a sun. Jo Mei! At that time i
+	had to test my new SDK for Win3.0 and this was the result.
+	The options and the abillity to run on the desktop are added
+	later. 
+
+	
+	The END.
+
+
+
+
+
+
+
+
+
+PS.
+	Try also:   AJAPA-JAPA (meditation)
+
+
+
+
+
