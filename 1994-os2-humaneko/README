@@ -1,0 +1,23 @@
+
+
+===============================================================================
+-------------------------------------------------------------------------------
+               
+               HumaNeko - An OS/2 Neko Program With a Human Touch
+       Written By Eric A. Wolf - Copyright (C) 1994 - All Rights Reserved
+
+  This program is SHAREWARE!  Please uncompress this program ONLY if you will
+  register the program if you find it useful, fun, etc.  Registration is only
+      $10 and details can be found in the HUMANEKO.TXT file.  Thank you !
+
+-------------------------------------------------------------------------------
+===============================================================================
+
+      If you are using PKUNZIP to uncompress this program, do so by typing:
+
+                             pkunzip -d HUMANEKO.ZIP
+
+           This program was compressed with a directory structure that 
+              should be maintained when decompressing.  Thank you !
+
+

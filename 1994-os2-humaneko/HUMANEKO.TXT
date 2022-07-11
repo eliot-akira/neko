@@ -1,0 +1,231 @@
+===============================================================================
+-------------------------------------------------------------------------------
+               
+               HumaNeko - An OS/2 Neko Program With a Human Touch
+       Written By Eric A. Wolf - Copyright (C) 1994 - All Rights Reserved
+
+This program is SHAREWARE!  Please read the registration information at the end
+     of this document for details on how to register your copy of HumaNeko.
+
+-------------------------------------------------------------------------------
+===============================================================================
+
+
+
+== Introduction ============
+
+If you are familiar with "Neko the Cat" or the "Cat and Mouse" program that 
+comes bundled with OS/2, then you are already familiar with HumaNeko 
+(pronounced "Human Neko").  In short, HumaNeko is Neko (or Cat and Mouse) with 
+a human-touch.  Instead of having a little animated cat chase your mouse cursor 
+around, in HumaNeko, a little human is trapped inside a window and playfully 
+follows your mouse pointer.
+
+HumaNeko will faithfully follow your mouse cursor wherever it goes on the
+screen.  However, if you move it outside HumaNeko's window, HumaNeko will try
+and get your attention so that you move the pointer back into the window and he
+can play some more.  Also, if your mouse cursor is inside the window, and
+you don't move it for a while, HumaNeko will get tired of standing around and 
+he'll occupy himself doing other things.  Once he's busy doing other things,
+you can try and slowly move the mouse away from him.  But do it slowly!  If
+he catches you, he'll jump and get back to chasing you around!
+
+HumaNeko is playful and comes with one additional feature.  Called Run-Away,
+if you select this, you and your little human friend engage in a game of Tag,
+and you're "it"!  You have to use your mouse and click on HumaNeko as he
+runs around the screen taunting you!
+
+-------------------------------------------------------------------------------
+
+== Installation ============
+
+Installing HumaNeko is easy.  Simply put HUMANEKO.EXE somewhere on your hard
+drive and go to the OS/2 desktop.  Go to your templates folder and drag out
+a program template.  When the notebook appears, fill in the application name
+(making sure to include the path where you put HUMANEKO.EXE).
+
+For example, if I put HumaNeko on my hard drive (C:) and under my OS/2
+directory, in a directory called HumaNeko, I would put 
+C:\OS2\HUMANEKO\HUMANEKO.EXE in the program portion of the settings
+notebook.  Close this settings notebook and you can start HumaNeko at any
+time by double clicking on the HumaNeko icon.
+
+You may also start HumaNeko from the OS/2 command line.  Simply go to the
+directory which holds HumaNeko and type:  HUMANEKO <press enter>.
+
+Further instructions for making an icon for an existing .EXE file or starting
+an OS/2 application can be found in the OS/2 2.x documentation.
+
+If you make a program object for the file (by dragging a program template out
+of the templates folder), feel free to assign it any icon you wish.  We have
+provided a sample HumaNeko icon (found in the directory you uncompressed
+HumaNeko) for your convenience.
+
+-------------------------------------------------------------------------------
+
+== Using HumaNeko ==============
+
+Once HumaNeko is started, you will see your little human follow your mouse
+cursor around.  He will follow you around whever you go.  The program's use
+is self-explanatory but, just for completeness, a few details about the 
+program's operation follow:
+    
+    PLAY-MODE
+    ---------
+        CHASE MODE:  When you first start HumaNeko, this is the mode of
+                     operation HumaNeko is in.  In this mode, the human will
+                     faithfully follow your mouse pointer wherever it goes.
+                     If the mouse pointer is inside HumaNeko's window and you
+                     don't move the mouse for awhile, HumaNeko will get bored
+                     and occupy himself doing other things.  Once he is busy
+                     entertaining himself, you can try and slowly move the
+                     mouse away from him.  But do it very slowly so that he
+                     doesn't notice!  Moving your mouse outside of HumaNeko's
+                     window only frustrates the poor guy!
+
+        RUN-AWAY MODE:  Once you select this mode from the Options menu item,
+                        HumaNeko tries to run away from you.  He'll dart in
+                        every direction dodging you.  In fact, if you don't
+                        catch him fast enough, he will even taunt you!  You
+                        catch him by clicking your first mouse button with
+                        the pointer directly on top of him.
+                        
+                        To disengage this mode of operation, select Chase Mode
+                        from the Options menu to put HumaNeko back to his
+                        cursor-chasing self.
+
+    OPTIONS:  Selecting this will bring up a dialog box with different    
+              settings you can change about HumaNeko.  Each is changed by
+              dragging the slider left and right in each control.  A
+              description of each follow:
+
+              Update Frequency:  This indicates how often HumaNeko moves.
+                                 He can either move very often (quickly) or
+                                 not very often (thus, very slowly).
+    
+              Step Rate:  This indicates how far HumaNeko can move with each
+                          step.  HumaNeko can either take very large steps
+                          (and move very fast) or take baby steps and move
+                          very slowly.
+
+              Mouse Sensitivity:  When HumaNeko is occupying himself, you can
+                                  try and be sneaky and slowly move the mouse
+                                  away from HumaNeko without his noticing.
+                                  This control decides how sensitive HumaNeko
+                                  is to your movement once he is busy.
+    
+    EXIT:  This function ends the HumaNeko program
+
+    GENERAL HELP:  This brings up a very basic dialog box describing the
+                   features and options in humaNeko
+
+    PRODUCT INFORMATION:  This brings up a dialog with information on the
+                          version number of the software, author information,
+                          copyright information, etc.
+
+
+-------------------------------------------------------------------------------
+
+== Registration ============
+
+If you like HumaNeko, or perhaps, you enjoy having the complete source code
+for an OS/2 PM program to aid you in writing your own programs, I ask you to
+register your copy of the program.  The registration cost is only $10.00 and
+it will only be with your support that I continue to develop for OS/2, 
+and especially, provide the complete source code for any of my works.
+
+You can register your copy of HumaNeko with me for only $10.00.  Please send 
+your registration payment as a check or money order (US funds only) to:
+
+                        Eric A. Wolf
+                        1630 North Johnson Street
+                        South Bend, Indiana  46628-2936
+
+I want to encourage everyone to start writing applications for OS/2, no
+matter how simple or complex.  That is why I am providing the source code 
+with this program.  If you've never developed for OS/2 before, now is your
+time to start and you have this to look off of to get you going.
+
+Please note, however, I provide the source code as-is and as a learning tool 
+for aspiring programmers.  Please do NOT modify the source code and re-release 
+an exact or similar product.  The source is provided solely as a learning 
+device.  The $10.00 registration fee is cheaper than any OS/2 programming 
+book and what I provide is a complete, functional OS/2 PM application and 
+ALL component source files that comprise it (how many books do that?)
+
+If the response is good enough, and only if the response is good, I will 
+continue to develop products and ship the source code along with them.  It
+benefits us all with this type of distribution, please do your part to
+support it!!
+
+I will answer no questions about the source code of the program from an
+individual until a registration payment has been received.  Once registered,
+source questions can be directed to me via electronic mail only:
+                
+                internet:     ericwolf@mentor.cc.purdue.edu
+
+If you have general comments or questions about the program, you may also
+send them to any of the electronic addresses above.  Thanks!
+
+-------------------------------------------------------------------------------
+
+== Source Code ===========
+
+This program comes complete with the entire source code that generated it.
+Please note the following restriction:
+
+   HumaNeko's source code is to be modified by the author alone.  The source
+   code is provided as a learning tool ONLY!  No modifications may be made
+   to it to reproduce a same or similar product.  The copyright remains that
+   of solely the author and the program is protected under both United States 
+   and International Copyright Laws.
+
+The complete source code for this program can be found in the SOURCE
+directory that was created when you uncompressed this program.  It was
+developed on Borland's C++ for OS/2.  A project file (HUMANEKO.PRJ) has been
+provided to facilitate your working with these files.  Each source file
+is documented and you should review the code with some good OS/2 references
+in hand (PM references, etc.)  Borland's online help system is great start!
+
+In the SOURCE/BITMAP directory are all the bitmaps used in the animation
+sequences in this project.  The icon is a standard 32x32 16 color icon while
+the bitmaps are all 48x48 16 color bitmaps.
+
+-------------------------------------------------------------------------------
+
+== Distribution of HumaNeko ========================
+
+You are free to distribute HumaNeko to whomever and however you wish as long
+as the following conditions are upheld:
+
+  -  HumaNeko should always be distributed in its entirety.  This includes
+     all documentation, executables, and source files.  Under no circumstances
+     should HumaNeko be distributed without ALL of its original files.
+     Distribution of HumaNeko is strongly encouraged, this includes distribution
+     by individuals, BBSes, electronic servies, shareware houses, cd-rom 
+     pressers, etc.  All I ask is that those who use HumaNeko pay their $10
+     registration fee.
+
+  -  HumaNeko's source code is to be modified by the author alone.  The source
+     code is provided as a learning tool ONLY!  No modifications may be made
+     to it to reproduce a same or similar product.  The copyright remains that
+     of solely the author and the program is protected under both United States 
+     and International Copyright Laws.
+
+  -  If you use HumaNeko, you MUST register it (directions for doing so
+     preceeded this section of the text).  "Use" includes both the actual
+     use of (or playing with) the HumaNeko program -or- using the source code 
+     as a reference for your own works.  If you use the source as a reference, 
+     please register your copy ($10.00 is cheaper than any book you can buy on
+     OS/2 programming and what is going to teach you as much??)  
+     
+  -  Remember, if you like the program (even if you don't care much for the 
+     source code) you should still register!!
+
+
+
+   -------------------------------------------------------------------------
+   Remember if you like HumaNeko and use it or if you use or plan to use the
+     source code as a reference for your own works, please register today!
+   -------------------------------------------------------------------------
+
