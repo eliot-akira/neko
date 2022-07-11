@@ -2,7 +2,7 @@
 
 Neko is a cross-platform open-source animated cursor-chasing cat screenmate application.
 
-<img src='1996-macintosh-neko-da/neko_animation_steps.png' alt='Neko Animation Steps' width='220' style='max-width:100%;image-rendering:pixelated' />
+<img src='1989-macintosh-neko-da/neko_animation_steps.png' alt='Neko Animation Steps' width='220' style='max-width:100%;image-rendering:pixelated' />
 
 ## Article
 
