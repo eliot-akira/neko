@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Neko";
+CFBundleShortVersionString = "Neko";
+CFBundleGetInfoString = "Neko, Copyright 2000, 2001, Takashi T. Hamada.";
+NSHumanReadableCopyright = "Copyright 2000, 2001, Takashi T. Hamada.";

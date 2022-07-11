@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {CLASS = Cat; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                closeCreditSheet = id; 
+                closeSheet = id; 
+                savePrefs = id; 
+                showCreditSheet = id; 
+                updateSelection = id; 
+            }; 
+            CLASS = Neko; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                BTN_OK = id; 
+                CB_isWhiteBG = id; 
+                CB_nekojarashi = id; 
+                PUM_typeOfCat = id; 
+                SLDR_noOfCats = id; 
+                TEXT_noOfCats = id; 
+                TEXT_unitOfCat = id; 
+                VIEW_typeOfCat = id; 
+                creditPanel = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = ScreenSaverView; 
+        }, 
+        {CLASS = ScreenSaverView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}
