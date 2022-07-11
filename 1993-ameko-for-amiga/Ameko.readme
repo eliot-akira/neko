@@ -1,0 +1,27 @@
+Short:    v1.01 Ameko displays a cat chasing the mouse.
+Author:   Carl Revell
+Uploader: Patrick Kellum <patrick@ygw.bohemianweb.com>
+Version:  1.01
+Type:     util/wb
+
+INTRODUCTION
+------------
+
+Ameko is an Amiga conversion of a program called Neko which was written by
+Dara T. Khani to run under Windows on PCs. The idea for Ameko was inspired by
+Dara's Neko program, however the code and Amiga implementation of Ameko are
+my own work.
+
+When the program is run, a small kitten called Ameko runs around within
+the confines of the program's window, chasing the mouse pointer. If Ameko
+reaches the edge of the window and the mouse pointer is outside the window
+boundaries then Ameko will scratch at the window border in a vain attempt
+to get at the mouse pointer.
+
+If there is no mouse movement within a predetermined length of time, then
+Ameko starts to fall asleep, eventually curling up and entering the land
+of nod. If the mouse is then moved, Ameko is startled and wakes up. Once the
+haze has cleared from in front of his eyes, he is off again, chasing the
+mouse pointer.
+
+

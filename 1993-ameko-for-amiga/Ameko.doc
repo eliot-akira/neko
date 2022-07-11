@@ -1,0 +1,304 @@
+
+                                Ameko v1.01
+
+                  (C) Copyright Carl Revell, 3 February 1993
+
+                            ALL RIGHTS RESERVED
+
+
+
+DISCLAIMER
+----------
+
+THE AUTHOR IS NOT RESPONSIBLE FOR ANY DAMAGE CAUSED BY THE USE OR MISUSE OF
+THIS DOCUMENTATION AND/OR THE PROGRAM(S) IT DESCRIBES.
+
+
+
+INTRODUCTION
+------------
+
+Ameko is an Amiga conversion of a program called Neko which was written by
+Dara T. Khani to run under Windows on PCs. The idea for Ameko was inspired by
+Dara's Neko program, however the code and Amiga implementation of Ameko are
+my own work.
+
+When the program is run, a small kitten called Ameko runs around within
+the confines of the program's window, chasing the mouse pointer. If Ameko
+reaches the edge of the window and the mouse pointer is outside the window
+boundaries then Ameko will scratch at the window border in a vain attempt
+to get at the mouse pointer.
+
+If there is no mouse movement within a predetermined length of time, then
+Ameko starts to fall asleep, eventually curling up and entering the land
+of nod. If the mouse is then moved, Ameko is startled and wakes up. Once the
+haze has cleared from in front of his eyes, he is off again, chasing the
+mouse pointer.
+
+
+
+SYSTEM REQUIREMENTS
+-------------------
+
+Amiga computer with at least 512K RAM with KICKSTART 2.0 or later.
+(KickStart 1.3 owners see MISCELLANEOUS section below)
+
+Ameko has been tested on the following configurations...
+
+Amiga 500 Plus, Amiga 600, Amiga 600HD, Amiga 1200, Amiga 1200HD (GVP 85MB
+Maxtor), Amiga 1500 (68000), Amiga 1500 (GVP 50MHz 68030), Amiga 1500 (GVP
+28MHz 68040), Amiga 3000, Amiga 4000.
+
+
+
+USAGE
+-----
+
+Ameko should at all times be run from Workbench by double-clicking on the
+appropriate program icon.
+
+There are two different program icons. One runs the Interlaced version of
+Ameko and the other runs the Non-Interlaced version. Two versions were
+required because the Interlaced version (the one I orginally developed)
+appeared stretched on a non-interlaced screen. I could have combined both
+interlaced and non-interlaced graphics into a single program but I would
+have sacrificed the size of the program for convenience. Most users will
+want to run one version or the other and won't have to lose the memory that
+the other screen mode's graphics would have consumed. Simple, huh ?!? If you
+don't know which version you should run, run them both and see which one
+looks best on your display.
+
+Ameko can be run from the CLI/Shell but was not designed with that in mind so
+I wouldn't do it if I were you. Anyway, you cannot adjust any startup options
+if running Ameko from the CLI/Shell (see ToolTypes below). The only reason
+alot of programs enable CLI/Shell startup (apart from use of the console) is
+so they can be run from the Startup-Sequence upon boot-up. Because Ameko
+requires Kickstart 2.0 or later, it can always be automatically run at
+boot-up by placing it in the WBStartup drawer of your boot disk.
+
+
+
+TOOLTYPES
+---------
+
+Ameko can be configured to your own personal taste by modifying the icon's
+ToolTypes. These can be accessed by clicking once on the program icon and
+then either pressing Right-Amiga + I or selecting the Information... option
+from the Workbench Icons menu. The values that you can change and their
+effect are listed below. For more information on changing ToolTypes see your
+Amiga Workbench manual.
+
+LEFT      = nn where nn is the number of pixels from the left edge of the
+            screen that the Ameko window will open up. Negative values and
+            values larger than your screen's width should be handled and
+            automatically adjusted by the program. I stress the word SHOULD.
+
+TOP       = nn where nn is the number of pixels from the top edge of the
+            screen that the Ameko window will open up. Negative values and
+            values larger than your screen's height should be handled and
+            automatically adjusted by the program. I stress the word SHOULD.
+
+WIDTH     = nn where nn is the starting width of the Ameko window in pixels.
+            The program should replace any stupid values (like negative or
+            zero width) with a reasonable default which it calculates based
+            on screen values. No guarantee is given that it will always
+            choose the correct value so I suggest sticking to sensible
+            values to be safe.
+
+HEIGHT    = nn where nn is the starting height of the Ameko window in pixels.
+            The program should replace any stupid values (like negative
+            height) with a reasonable default which it calculates based on
+            screen font. I would suggest that you try and keep your values
+            for HEIGHT within sensible bounds just in case.
+
+SLEEP     = nn where nn is the time (in seconds) that the mouse must remain
+            stationary before Ameko starts to fall asleep. Permissible
+            values for nn are 1 to 3600 seconds (1 second to 1 hour).
+
+SOUND     = nn where nn is either YES or ON which will play a sound sample
+            when the Ameko window is opened and again when it is closed.
+
+            OR
+
+            nn where nn is either OFF or NO which will disable the playing
+            of a sound sample when the Ameko window is opened and closed.
+
+
+DONOTWAIT = This is really only to tell Workbench not to wait for the
+            program's return if you put it in the WBStartup drawer on your
+            boot device. If you don't already know, any programs placed into
+            the WBStartup drawer are automatically run when Workbench is
+            loaded which means you can drag the Ameko icon into your
+            WBStartup drawer on your boot disk and let the little fella run
+            riot automatically, every time you boot up your Amiga. It's best
+            not to alter or delete this ToolType unless you know what you're
+            doing.
+
+TOOLPRI   = Amiga beginners need not read this section, just leave the
+            ToolType set to it's default value which is 21.
+            If you are interested, this sets the Task Priority of Ameko above
+            all others (on my system anyway) which I found necessary to
+            reduce the flickering which occurred when the mouse was moved
+            around a lot (see TECHNICAL SECTION below). I found no problem
+            with speed or operation of my Amiga with this high task priority,
+            but if you experience any difficulties then by all means raise or
+            lower this value appropriately. Remember, +127 is the highest
+            priority, -128 is the lowest and most normal programs should be
+            set to TASKPRI 0.
+
+If for some obscure reason you wish to disable a particular ToolType, you
+can simply enclose it within a pair or angled brackets. For instance, to
+disable the LEFT=50 ToolType, just change it to <LEFT=50>. This is an
+excellent way to disable ToolTypes, whilst still enabling you to see the
+syntax of ToolTypes so you don't forget that it is LEFT=nn and not
+WINLEFT=nn, etc..
+
+Ameko has built-in defaults for most of the ToolTypes in case any get
+completely deleted from the icon. They are...
+
+LEFT   = 32
+TOP    = 32
+WIDTH  = 100
+HEIGHT = 100
+SLEEP  = 5 (seconds)
+SOUND  = ON
+
+
+
+TRICKS AND TIPS
+---------------
+
+If you select the Ameko window by clicking once within its boundaries, then
+you have the ability to send Ameko straight to sleep and also stop him from
+chasing the mouse pointer. You do this by clicking once with your right
+mouse button. To wake him up again and let him chase the mouse pointer just
+click the right mouse button again. Remember, you must select the Ameko
+window first for this feature to work.
+
+
+
+TECHNICAL SECTION
+-----------------
+
+Not really a technical section, more a chance for me to explain why part of
+the program is written the way it is and to ask for advice from anyone who
+'knows their onions' when it comes to programming.
+
+The program is written in 'C' and although I can program in 680x0 assembler
+(software houses, my details are below!) I considered 'C' to be the best
+choice. I may recode some or maybe all of the program in 680x0 at a later
+date, but it does just fine for now.
+
+Basically, a window is opened and then the program is sent to sleep, waiting
+on either a CloseWindow message or a timed delay message sent from the
+timer.device. So, when the program isn't calculating Ameko's position or
+actually drawing him, then it is Waiting and allowing other tasks to get
+their share of the CPU. If the TaskPri is set to anything below the
+input.device (20 on my system) then the Ameko graphics 'flicker' within a
+certain (but not always stationary) area of the screen. Ameko does a WaitTOF
+before actually calling EraseImage and DrawImage, but (calculated guess time)
+because so many other tasks have priorities higher than Ameko they all get
+woken up before Ameko so by the time Ameko comes back from it's WaitTOF call
+the video beam is several inches down the screen. This is worse when you
+rapidly move the mouse, I guess because the input.device is busy handling
+all the new events before CPU is given to lower priority tasks.
+
+I thought of how I could double-buffer the Ameko window but when you think
+that the window can be sized to full screen and with the introduction of the
+'AGA' chipset can be 8-planes deep, would require, even just on a 640 x 512
+screen (640/8)bytes*512bytes*8planes*2buffers = 655Kb(approx) of CHIP RAM.
+This is plain stupid for a 'toy' like Ameko and even then there is still the
+problem of implementing window double-buffering. These same memory problems
+arise if you think about using a SuperBitMap window too.
+
+My solution was to raise the task priority of Ameko to equal or above that
+of the input.device. That way, Ameko can pre-empt or at least share CPU time
+on an equal basis with the input.device. The flicker has all but disappeared
+and system performance is not noticably affected. This is achieved by the
+ToolType TASKPRI=21 so it's not permanently hard-coded into the program
+enabling people to make their own decision on task priority. I have had no
+problems with TASKPRI=21.
+
+If anyone has any good ideas on another way to fix the flickering without
+raising task priority I would love to hear from them (details below).
+
+
+
+MISCELLANEOUS (just to prove I could spell it)
+-------------
+
+Any bugs, letters, ideas and suggestions would be welcome (details below).
+
+I may well do a Kickstart 1.3 version of Ameko but this depends on the
+response I get from Kickstart 1.3 owners. If you are using Kickstart 1.3 and
+would like me to write a version of Ameko then write me a letter (don't send
+me any disks as I can't return them). I can't promise anything, but you
+never know! Alternatively, do the decent thing and upgrade to Kickstart 2.
+Not only will it enable you to run Ameko (your main reason for upgrading I'm
+sure!) but it has many benefits that are not immediately obvious and more
+and more software either has added features on Kickstart 2 machines or, in
+some cases, requires Kickstart 2. Kickstart 2 is very much like an iceberg,
+a little of its advantages can be seen above water like the new-look
+Workbench and requesters but most of its improvements and benefits are
+hidden below the surface and are not immediately obvious - however, they are
+there!
+
+
+
+ACKNOWLEDGEMENTS
+----------------
+
+Dara T.Khani   - Author of the Windows version of Neko, source of
+                 inspiration.
+
+Mike Coupland  - Prolific software author and great friend.
+
+Alex Slater    - Originator of Barking Polecat Software and general all round
+                 good guy. Are your out there? Give me a call.
+
+Andrew Rowe    - Sysop of Silica Systems Technical BBS (number below). Dial
+                 in and leave me mail or just look around.
+
+Darren Knowles - Still working on KnowlesPaint <laughs>!?
+
+
+
+AMEKO HISTORY
+-------------
+
+Version 1.01, 2 February 1993.
+
+- Changed the section of code that calculates the sleeping frames of
+  animation. They are now much more optimised and far less 'messy' than
+  v1.00. This has enabled improved control over the playback of the sleeping
+  animation frames, especially the speed of frame playback. Ameko no longer
+  hyperventilates while snoring, hurrah !
+
+- Added the SLEEP ToolType so the user can specify how long the mouse must
+  remain stationary before Ameko starts falling asleep.
+
+-------------
+
+Version 1.00, 27 January 1993.
+
+Initial release. (Wow, not much to tell your kids!)
+
+-------------
+
+
+
+AUTHOR
+------
+                            //
+Name:         Carl Revell \X/
+
+Modem:        +44-(0)81-309-6675
+
+NorMail:      8 Western Road,
+   	          MAIDSTONE,
+   	          Kent,
+   	          ME16 8NE,
+   	          England.
+
+
+Have Fun !
