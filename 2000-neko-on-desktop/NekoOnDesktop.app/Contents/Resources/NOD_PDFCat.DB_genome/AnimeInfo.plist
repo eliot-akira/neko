@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Author</key>
+	<string>Takashi T. Hamada</string>
+	<key>Color Scheme</key>
+	<array>
+		<dict>
+			<key>B</key>
+			<integer>1</integer>
+			<key>G</key>
+			<real>1.000000000000000e+00</real>
+			<key>Name</key>
+			<string>Body</string>
+			<key>R</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>B</key>
+			<real>6.666670000000000e-01</real>
+			<key>G</key>
+			<real>6.666670000000000e-01</real>
+			<key>Name</key>
+			<string>Stripe</string>
+			<key>R</key>
+			<real>6.666670000000000e-01</real>
+		</dict>
+		<dict>
+			<key>B</key>
+			<real>0.000000000000000e+00</real>
+			<key>G</key>
+			<real>0.000000000000000e+00</real>
+			<key>Name</key>
+			<string>Outline</string>
+			<key>R</key>
+			<real>0.000000000000000e+00</real>
+		</dict>
+	</array>
+	<key>Image Height</key>
+	<real>1.280000000000000e+02</real>
+	<key>Image Width</key>
+	<real>1.280000000000000e+02</real>
+	<key>Info Image</key>
+	<string>cat_sit_r.pdf</string>
+	<key>Preferred Scale</key>
+	<real>2.500000000000000e-01</real>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Baby arrival</key>
+	<string>New baby arrived! Please name him/her.</string>
+	<key>Ball Menu (hide)</key>
+	<string>Hide Ball</string>
+	<key>Ball Menu (show)</key>
+	<string>Show Ball</string>
+	<key>Futon Menu (hide)</key>
+	<string>Hide Futon</string>
+	<key>Futon Menu (show)</key>
+	<string>Show Futon</string>
+	<key>Loading Image Panel</key>
+	<string>Loading Image</string>
+	<key>Milk Bowl Menu (hide)</key>
+	<string>Hide Milk Bowl</string>
+	<key>Milk Bowl Menu (show)</key>
+	<string>Show Milk Bowl</string>
+	<key>Name Cat</key>
+	<string>Welcome! Please name your cat, first.</string>
+	<key>Nekojarashi Menu (hide)</key>
+	<string>Hide Nekojarashi</string>
+	<key>Nekojarashi Menu (show)</key>
+	<string>Show Nekojarashi</string>
+	<key>Shower Menu (hide)</key>
+	<string>Hide Shower</string>
+	<key>Shower Menu (show)</key>
+	<string>Show Shower</string>
+	<key>Starting up Panel</key>
+	<string>Starting up...</string>
+</dict>
+</plist>

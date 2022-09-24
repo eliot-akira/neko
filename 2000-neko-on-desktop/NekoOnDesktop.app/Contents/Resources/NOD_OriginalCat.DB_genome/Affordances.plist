@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>ball.collided</key>
+	<dict>
+		<key>PreferedNextAction</key>
+		<string>below</string>
+	</dict>
+	<key>cat.collided</key>
+	<dict>
+		<key>AffectedParams</key>
+		<dict>
+			<key>surprise</key>
+			<array>
+				<dict>
+					<key>operator</key>
+					<string>pp</string>
+					<key>param</key>
+					<string>surprise</string>
+				</dict>
+				<dict>
+					<key>operator</key>
+					<string>pn</string>
+					<key>param</key>
+					<string>0.1</string>
+				</dict>
+				<dict>
+					<key>operator</key>
+					<string>+</string>
+					<key>param</key>
+					<string>0.0</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>food.reached</key>
+	<dict>
+		<key>PreferedNextAction</key>
+		<string>eat</string>
+	</dict>
+</dict>
+</plist>

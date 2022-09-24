@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Baby arrival</key>
+	<string>子猫が生まれました！名前をつけてください。</string>
+	<key>Ball Menu (hide)</key>
+	<string>ボールをしまう</string>
+	<key>Ball Menu (show)</key>
+	<string>ボールを置く</string>
+	<key>Futon Menu (hide)</key>
+	<string>布団をしまう</string>
+	<key>Futon Menu (show)</key>
+	<string>布団をしく</string>
+	<key>Loading Image Panel</key>
+	<string>読み込み中の画像データ</string>
+	<key>Milk Bowl Menu (hide)</key>
+	<string>ミルク皿をしまう</string>
+	<key>Milk Bowl Menu (show)</key>
+	<string>ミルク皿を置く</string>
+	<key>Name Cat</key>
+	<string>ようこそ！最初に猫に名前をつけてください。</string>
+	<key>Nekojarashi Menu (hide)</key>
+	<string>ネコジャラシを隠す</string>
+	<key>Nekojarashi Menu (show)</key>
+	<string>ネコジャラシを表示</string>
+	<key>Shower Menu (hide)</key>
+	<string>シャワーを隠す</string>
+	<key>Shower Menu (show)</key>
+	<string>シャワーを表示</string>
+	<key>Starting up Panel</key>
+	<string>起動中...</string>
+</dict>
+</plist>
