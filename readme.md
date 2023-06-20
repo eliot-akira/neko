@@ -8,6 +8,12 @@ Neko is a cross-platform open-source animated cursor-chasing cat screenmate appl
 
 [Neko: A History of a Software Pet](https://eliotakira.com/neko/)
 
+## New
+
+- [Icon library: Collection of Neko variants found in the wild](/2023-icon-library)
+- [jneko - JavaScript implementation of Neko](https://github.com/evert/jneko)
+- [neko - A complete re-implementation in Go, using the Ebiten gaming library](https://github.com/crgimenes/neko)
+
 ## Archive
 
 This is a historical archive of source code related to the Neko project.
