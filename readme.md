@@ -25,7 +25,7 @@ This is a historical archive of source code related to the Neko project.
 - [1991 - Cat and Mouse (OS/2)](/1991-os2-cat-and-mouse)
 - [1991 - WNEKO (Windows 3.x)](/1991-wneko)
 - [1992 - Neko Runs Free (Windows 3.x)](/1992-neko-for-windows-3)
-- [1993 - Ameko (Amiga)](/1993-amiga)
+- [1993 - Ameko (Amiga)](/1993-ameko-for-amiga)
 - [1993 - oneko (Linux)](/1993-linux-oneko)
 - [1997 - Icon Libraries (Windows)](/1997-icon-libraries)
 - [1998 - Neko98 (Windows)](/1998-windows-neko98)
